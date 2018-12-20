@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V3X-J9-a57">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SPIDER-MAN ECLIPSE.ttf">
+            <string>SPIDER-MAN:ECLIPSE</string>
+        </array>
+        <array key="batmfa__.ttf">
+            <string>BatmanForeverAlternate</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Batman-->
+        <scene sceneID="tYA-6v-eIg">
+            <objects>
+                <viewController id="vZ0-aJ-9F8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sOS-Cb-7rm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Batman" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9td-qF-7o7">
+                                <rect key="frame" x="50" y="164" width="275" height="404"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BatmanForeverAlternate" family="BatmanForeverAlternate" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9td-qF-7o7" firstAttribute="top" secondItem="yMp-8O-EHd" secondAttribute="top" constant="100" id="NBe-XS-E2D"/>
+                            <constraint firstItem="9td-qF-7o7" firstAttribute="leading" secondItem="yMp-8O-EHd" secondAttribute="leading" constant="50" id="T2v-Pe-qOI"/>
+                            <constraint firstItem="yMp-8O-EHd" firstAttribute="bottom" secondItem="9td-qF-7o7" secondAttribute="bottom" constant="50" id="ezA-pU-LdT"/>
+                            <constraint firstItem="yMp-8O-EHd" firstAttribute="trailing" secondItem="9td-qF-7o7" secondAttribute="trailing" constant="50" id="zH9-A6-cTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yMp-8O-EHd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Batman" id="Q1v-dL-9FD">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="w5e-Fv-nAE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="8B9-kJ-6eC">
+                            <connections>
+                                <segue destination="B06-Bi-6hb" kind="show" id="bSf-Wi-By6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfj-le-HEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583.2" y="44.527736131934034"/>
+        </scene>
+        <!--Película-->
+        <scene sceneID="s5J-Rv-a0m">
+            <objects>
+                <viewController id="B06-Bi-6hb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHY-mc-aUg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iIL-LM-81m">
+                                <rect key="frame" x="18" y="81" width="339" height="517"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="40j-sL-No7" firstAttribute="bottom" secondItem="iIL-LM-81m" secondAttribute="bottom" constant="20" id="2Qm-hJ-wv6"/>
+                            <constraint firstItem="iIL-LM-81m" firstAttribute="centerY" secondItem="kHY-mc-aUg" secondAttribute="centerY" id="DwA-fR-cPQ"/>
+                            <constraint firstItem="iIL-LM-81m" firstAttribute="centerX" secondItem="kHY-mc-aUg" secondAttribute="centerX" id="JKj-W5-L6H"/>
+                            <constraint firstItem="iIL-LM-81m" firstAttribute="leading" secondItem="40j-sL-No7" secondAttribute="leading" constant="18" id="JYX-aF-Kev"/>
+                            <constraint firstItem="iIL-LM-81m" firstAttribute="top" secondItem="40j-sL-No7" secondAttribute="top" constant="20" id="wTp-RP-TsE"/>
+                            <constraint firstItem="iIL-LM-81m" firstAttribute="top" secondItem="40j-sL-No7" secondAttribute="top" constant="17" id="xN2-UL-JtJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="40j-sL-No7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Película" id="m85-wE-153"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GC8-jz-NHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325.5999999999999" y="44.527736131934034"/>
+        </scene>
+        <!--Spiderman-->
+        <scene sceneID="oE2-iZ-Kzy">
+            <objects>
+                <viewController id="Nrk-ho-GZD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXh-lo-rwH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Spiderman" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moh-nO-bXA">
+                                <rect key="frame" x="36" y="286" width="295" height="81"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SPIDER-MAN:ECLIPSE" family="SPIDER-MAN:ECLIPSE" pointSize="48"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="moh-nO-bXA" firstAttribute="leading" secondItem="bS9-vV-C6w" secondAttribute="leading" constant="17" id="XHX-2f-v6n"/>
+                            <constraint firstItem="bS9-vV-C6w" firstAttribute="trailing" secondItem="moh-nO-bXA" secondAttribute="trailing" constant="26" id="dnd-4c-Czh"/>
+                            <constraint firstItem="bS9-vV-C6w" firstAttribute="bottom" secondItem="moh-nO-bXA" secondAttribute="bottom" constant="100" id="oSb-AE-JJz"/>
+                            <constraint firstItem="moh-nO-bXA" firstAttribute="top" secondItem="bS9-vV-C6w" secondAttribute="top" constant="100" id="rPM-jK-Ww0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bS9-vV-C6w"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Spiderman" id="djH-aC-PQa">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="nV9-99-oeb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="ZJ4-bw-Snw">
+                            <connections>
+                                <segue destination="BUJ-WS-uvX" kind="show" id="wWP-ca-8Ys"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9i-ej-XsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583.2" y="-620.23988005997012"/>
+        </scene>
+        <!--Película-->
+        <scene sceneID="3zQ-jT-lWv">
+            <objects>
+                <viewController id="BUJ-WS-uvX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4pD-FH-uX4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1AR-EQ-rc3">
+                                <rect key="frame" x="10" y="82" width="355" height="519"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1AR-EQ-rc3" firstAttribute="centerX" secondItem="4pD-FH-uX4" secondAttribute="centerX" id="5lV-00-r25"/>
+                            <constraint firstItem="WL5-ea-bFJ" firstAttribute="bottom" secondItem="1AR-EQ-rc3" secondAttribute="bottom" constant="10" id="Dde-eI-u1l"/>
+                            <constraint firstItem="1AR-EQ-rc3" firstAttribute="top" secondItem="WL5-ea-bFJ" secondAttribute="top" constant="10" id="Det-hE-w72"/>
+                            <constraint firstItem="1AR-EQ-rc3" firstAttribute="top" secondItem="WL5-ea-bFJ" secondAttribute="top" constant="18" id="b43-aa-5mA"/>
+                            <constraint firstItem="WL5-ea-bFJ" firstAttribute="bottom" secondItem="1AR-EQ-rc3" secondAttribute="bottom" constant="17" id="mRw-bQ-wuM"/>
+                            <constraint firstItem="1AR-EQ-rc3" firstAttribute="leading" secondItem="WL5-ea-bFJ" secondAttribute="leading" constant="10" id="v32-th-6BN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WL5-ea-bFJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Película" id="5Su-gh-J8l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUk-CU-3Ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325.5999999999999" y="-620.23988005997012"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ewj-WL-1Vt">
+            <objects>
+                <tabBarController id="V3X-J9-a57" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nhr-VR-hY7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DOt-cl-1oX" kind="relationship" relationship="viewControllers" id="LFw-hC-h4M"/>
+                        <segue destination="a3b-Dp-Zbx" kind="relationship" relationship="viewControllers" id="xYy-tf-7CQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39a-7u-dTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308" y="-288"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8wX-rp-SaE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DOt-cl-1oX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="logoSpiderman.jpg" id="Xmr-vM-rHW"/>
+                    <toolbarItems/>
+                    <value key="contentSizeForViewInPopover" type="size" width="10" height="0.0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fC-fT-eR9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nrk-ho-GZD" kind="relationship" relationship="rootViewController" id="NsE-cJ-Rmh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5O-td-5QM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-620.23988005997012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Rf-FO-0nv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a3b-Dp-Zbx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="iTunesArtwork copy 2.png" id="0fq-do-c8F">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-10" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8CO-HL-3dg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vZ0-aJ-9F8" kind="relationship" relationship="rootViewController" id="oeZ-2C-4s9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ci0-TV-wj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="batman.jpg" width="1405" height="2048"/>
+        <image name="iTunesArtwork copy 2.png" width="100" height="100"/>
+        <image name="logoSpiderman.jpg" width="50" height="50"/>
+        <image name="spiderman.jpg" width="329" height="500"/>
+    </resources>
+</document>
